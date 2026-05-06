@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shim: forwards to dist/bin/statusline.js relative to plugin root.
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+exec node "$ROOT/dist/bin/statusline.js" "$@"

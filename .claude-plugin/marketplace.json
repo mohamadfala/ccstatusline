@@ -1,0 +1,11 @@
+{
+  "name": "mohamadfala-marketplace",
+  "owner": "mohamadfala",
+  "plugins": [
+    {
+      "name": "ccstatusline",
+      "source": "github:mohamadfala/ccstatusline",
+      "description": "Modern, themed status line for Claude Code"
+    }
+  ]
+}

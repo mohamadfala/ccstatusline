@@ -1,0 +1,10 @@
+{
+  "name": "ccstatusline",
+  "displayName": "CC Status Line",
+  "version": "0.1.0",
+  "description": "Modern, themed status line for Claude Code with configurable segments and team branding.",
+  "author": "mohamadfala",
+  "homepage": "https://github.com/mohamadfala/ccstatusline",
+  "license": "MIT",
+  "commands": ["ccstatusline-config", "ccstatusline-setup"]
+}

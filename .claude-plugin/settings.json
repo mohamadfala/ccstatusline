@@ -1,0 +1,7 @@
+{
+  "subagentStatusLine": {
+    "type": "command",
+    "command": "node ${CLAUDE_PLUGIN_ROOT}/dist/bin/statusline.js",
+    "padding": 1
+  }
+}
