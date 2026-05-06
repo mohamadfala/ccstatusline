@@ -20,7 +20,13 @@
     "total_output_tokens": 34500,
     "context_window_size": 200000,
     "used_percentage": 47,
-    "remaining_percentage": 53
+    "remaining_percentage": 53,
+    "current_usage": {
+      "input_tokens": 8000,
+      "cache_creation_input_tokens": 2300,
+      "cache_read_input_tokens": 83700,
+      "output_tokens": 1200
+    }
   },
   "output_style": { "name": "default" }
 }

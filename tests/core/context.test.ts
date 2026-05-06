@@ -26,4 +26,24 @@ describe("parseStdin", () => {
     const c = parseStdin("not json{");
     expect(c.model.displayName).toBe("Claude");
   });
+
+  it("ctx.used reflects current_usage sum, not cumulative input", () => {
+    const c = parseStdin(fixture);
+    // fixture has current_usage: 8000 + 2300 + 83700 = 94000
+    expect(c.ctx.used).toBe(94_000);
+    // and inputTokens stays cumulative
+    expect(c.ctx.inputTokens).toBe(12_300);
+    // 94000 / 200000 = 47% — agrees with used_percentage
+    expect(Math.round((c.ctx.used / c.ctx.total) * 100)).toBe(c.ctx.pct);
+  });
+
+  it("falls back to pct × window when current_usage missing", () => {
+    const c = parseStdin(
+      JSON.stringify({
+        context_window: { context_window_size: 200_000, used_percentage: 30 }
+      })
+    );
+    expect(c.ctx.used).toBe(60_000);
+    expect(c.ctx.pct).toBe(30);
+  });
 });

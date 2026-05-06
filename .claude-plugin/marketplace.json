@@ -8,7 +8,7 @@
       "name": "ccstatusline",
       "source": "./",
       "description": "Modern, themed status line for Claude Code",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "homepage": "https://github.com/mohamadfala/ccstatusline",
       "license": "MIT",
       "category": "developer-tools",
