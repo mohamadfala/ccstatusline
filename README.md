@@ -8,13 +8,17 @@ A modern, themed status line for [Claude Code](https://claude.com/claude-code) â
 
 ## Install
 
-```bash
-claude plugin marketplace add github:mohamadfala/ccstatusline
-claude plugin install ccstatusline
+In Claude Code:
+
+```
+/plugin marketplace add mohamadfala/ccstatusline
+/plugin install ccstatusline@mohamadfala-marketplace
 /ccstatusline-setup
 ```
 
-That's it. The setup command patches `~/.claude/settings.json` once and the status line appears on the next interaction.
+(Or from the shell: `claude plugin marketplace add mohamadfala/ccstatusline` then `claude plugin install ccstatusline@mohamadfala-marketplace`.)
+
+The setup command patches `~/.claude/settings.json` once and the status line appears on the next interaction.
 
 ## Configure
 
