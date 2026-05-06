@@ -1,0 +1,26 @@
+{
+  "cwd": "/Users/dev/projects/myapp",
+  "session_id": "abc123",
+  "version": "2.1.97",
+  "model": { "id": "claude-opus-4-7", "display_name": "Opus 4.7" },
+  "workspace": {
+    "current_dir": "/Users/dev/projects/myapp",
+    "project_dir": "/Users/dev/projects/myapp",
+    "added_dirs": []
+  },
+  "cost": {
+    "total_cost_usd": 0.4234,
+    "total_duration_ms": 1380000,
+    "total_api_duration_ms": 145000,
+    "total_lines_added": 142,
+    "total_lines_removed": 38
+  },
+  "context_window": {
+    "total_input_tokens": 12300,
+    "total_output_tokens": 34500,
+    "context_window_size": 200000,
+    "used_percentage": 47,
+    "remaining_percentage": 53
+  },
+  "output_style": { "name": "default" }
+}
